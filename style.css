@@ -1,0 +1,57 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: #2c5530;
+}
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.flex{
+  display: flex;
+}
+
+.container {
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ display:flexbox;
+}
+.logo{
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.sign{
+  margin-top: 30%;
+  margin-left: 20%;
+  font-size: 54px;
+  font-weight: 900;
+  color:#415167;
+  z-index: 10;
+  
+}
+.light{
+  color: white;
+  background-color: #c7a17a;
+  z-index: 10;
+}
+.header_img{
+  z-index: 1;
+  margin-left: -25%;
+  opacity: 100;
+}
+nav{
+  background-color: #415167;
+}

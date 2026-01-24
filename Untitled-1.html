@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revo | The Morning Livery</title>
+    <style>
+        /* Сброс и базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: auto 400px 1fr; /* Авто, 400px картинка, остальное - синий блок */
+            overflow-x: hidden; /* Убираем горизонтальный скролл */
+        }
+
+        /* === ЛЕВАЯ КОЛОНКА (Логотип и текст) === */
+        .left-column {
+            padding: 30px; /* Отступ слева и сверху, как на макете */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background-color: #f5f5f5; /* Светлый фон, как на картинке */
+            color: #333;
+        }
+
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 100px; /* Отступ в 100px до основного текста */
+        }
+
+        .slogan {
+            font-size: 0.8rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .main-heading {
+            font-size: 3rem;
+            line-height: 1.1;
+            font-weight: 300;
+        }
+
+        .main-heading .line-break {
+            display: block;
+        }
+
+        /* === ЦЕНТРАЛЬНАЯ КОЛОНКА (Фоновая картинка) === */
+        .image-column {
+            width: 400px;
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80');
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        /* === ПРАВАЯ КОЛОНКА (Тёмно-синее меню) === */
+        .right-column {
+            background-color: #1a365d; /* Тёмно-синий цвет, как на макете */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-top: 30px; /* Отступ сверху для иконки */
+        }
+
+        .cart-icon {
+            font-size: 1.5rem;
+            margin-bottom: 20px; /* Отступ 20px под иконкой */
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; /* Отступ ~10px между пунктами меню */
+        }
+
+        .nav-item {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item:hover {
+            color: #cbd5e0; /* Светлый оттенок при наведении */
+        }
+    </style>
+</head>
+<body>
+    <!-- Левая колонка -->
+    <div class="left-column">
+        <div class="logo">revo</div>
+        <div class="slogan">THE MORNING<br>LIVERY</div>
+        <h1 class="main-heading">
+            <span class="line-break">YOUR</span>
+            <span class="line-break">PERSONALIZED</span>
+            <span class="line-break">COFFEE</span>
+        </h1>
+    </div>
+
+    <!-- Центральная колонка (картинка) -->
+    <div class="image-column">
+        <!-- Фон задается через CSS -->
+    </div>
+
+    <!-- Правая колонка (меню) -->
+    <div class="right-column">
+        <div class="cart-icon">🛒</div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">TRANG CHỦ</a>
+            <a href="#" class="nav-item">COFFEE</a>
+            <a href="#" class="nav-item">PHIN MA MÀU</a>
+            <a href="#" class="nav-item">COMBO PHIN PHÊ</a>
+            <a href="#" class="nav-item">GIFTSET</a>
+            <a href="#" class="nav-item">LIÊN HỆ</a>
+        </nav>
+    </div>
+</body>
+</html>
