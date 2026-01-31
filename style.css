@@ -1,17 +1,12 @@
-
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
+  background-color: #f5f4f9;
 }
-
-
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  color: #2c5530;
+  color: #000000;
 }
 .nunito {
   font-family: "Nunito", sans-serif;
@@ -19,39 +14,155 @@
   font-weight: 100;
   font-style: normal;
 }
+header{
+  display: flex;
+}
+.logo{
+  margin-top: 60px;
+  margin-left: 220px;
+  margin-right: 140px;
+}
+h1{
+  margin-top: 350px;
+  margin-left: 220px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(75, 84, 114);
+  font-weight: 800;
+  font-size: 4em;
+}
+.accent{
+  color: white;
+  background-color: rgb(208, 186, 136);
+}
+.navigation{
+  background-color: rgb(75, 84, 114);
+  width: 100%;
+}
+.bag{
+  margin-top:60px ;
+  margin-left: 80px;
+}
+nav{
+  margin-top: 100px;
+  margin-left: 70px;
+  display:grid; 
+  font-family:"Nunito", sans-serif;
+  font-weight: 100;
+  gap: 20px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: white; 
+}
+main{
+  margin-top: 80px;
+  text-align: center;
+}
+h2{
+  margin-top: -20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgb(75, 84, 114);
+  font-weight: 900;
+  font-size: 28px;
+}
+h3{
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: rgb(75, 84, 114);
+  font-size: 22px;
+}
+.cards{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+article{
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+.w{
+  width: 250px;
+}
+
+p{
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+s{
+  margin: 0;
+  padding: 0;
+}
+h4{
+  font-size:24px ;
+}
+.choose{
+  margin-top: 80px;
+
+}
+.choose article{
+  width:max-content;
+  flex-direction: row;
+}
+.choose img{
+  width: 250px;
+}
+.card-in{
+  width: 400px;
+  background-color: white;
+}
+.w{
+  flex-wrap: wrap;
+}
 .flex{
   display: flex;
 }
+.flex-c{
+  flex-direction: column;
+}
+.bluewall{
+  background-color: rgb(75, 84, 114);
+  width: 20%;
+  height: 120%;
+  position:static;
 
-.container {
- width: 100%;
- max-width: 1200px;
- margin: 0 auto;
- display:flexbox;
 }
-.logo{
-  margin-top: 10%;
-  margin-left: 20%;
-}
-.sign{
-  margin-top: 30%;
-  margin-left: 20%;
-  font-size: 54px;
-  font-weight: 900;
-  color:#415167;
-  z-index: 10;
+
+.tab{
+  margin-top: 15%;
+  text-align: start;
   
 }
-.light{
-  color: white;
-  background-color: #c7a17a;
-  z-index: 10;
+h5{
+  color:#C7A17A ;
+  margin: 0;
+  font-size: large;
 }
-.header_img{
-  z-index: 1;
-  margin-left: -25%;
-  opacity: 100;
+.tabs{
+  width: 400px;
 }
-nav{
-  background-color: #415167;
+.just{
+  width: 150px;
+  justify-content:space-between ;
+}
+.yellowbut{
+  color: #f5f4f9;
+  background-color: #C7A17A;
+  border: #C7A17A;
+  border-radius: 50px;
+  font-size: large;
+  width: 150px;
+  height: 50px;
+}
+section{
+  margin-top: 20%;
+}
+.container{
+  width: 450px;
 }
