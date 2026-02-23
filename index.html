@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/script/mobile.css" media="screen and (max-width:
+1024px)">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -13,44 +15,65 @@
 <body>
     <header >
         <aside >
-            <img src="assets/imgs/LOGO.png" alt="логотип фирмы" class="logo" >
-            <h1 >ВАШ<br><span class="accent">ПЕРСОНАЛИЗИРОВАННЫЙ</span><BR>КОФЕ</BR></h1>
+            <a href="#" class="logo">
+                 <img src="assets/imgs/LOGO.png" alt="логотип фирмы" class="logo" >
+            </a>
+            <h1 class="nav">ВАШ<br><span class="accent nav">ПЕРСОНАЛИЗИРОВАННЫЙ</span><BR>КОФЕ</BR></h1>
         </aside>
-        <img src="assets/imgs/banner.png" alt="баннер" class="intro" >
-        <aside class="navigation">
-            <img src="assets/icons/shopping-cart-3.png" alt="none" class="bag">
-            <nav>
-                <a href="#!"><b>Католог</b></a>
-                <a href="#!">Кофе</a>
-                <a href="#!">Прайс-лист</a>
-                <a href="#!">Подарок</a>
-                <a href="#!">Меню</a>
-                <a href="#!">Профиль</a>
-            </nav>
+        <img src="assets/imgs/banner.png" alt="баннер" class="intro nav">
+        <aside class="navigation nav">
+            <img src="assets/icons/shopping-cart-3.png" alt="none" class="svg bag">
+            <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О проекте</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        
+                    </ul>
+                    <button class="btn  header__cta">Заказать</button>
+                </nav>
+                
         </aside>
-        
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть
+        меню" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
 
 
-        
+
     </header>
     <main>
         <section>
             <h3>Постоянный количественный рост оправдал надежды граждан</h3>
             <h2>БЫЛ СОРВЫН ДОКЛАД ПРЕДСЕДАТЕЛЯ СОВХОЗА</h2>
-            <div class="cards">
-                 <article  class="w"><img src="assets/icons/coffeeshop.png" alt="иконка кофейни">
+            <div class="cards flex">
+                 <article  ><img src="assets/icons/coffeeshop.png" alt="иконка кофейни" class="icon">
                 <h4>Сплочённость команды профессионалов разочаровала</h4>
                 <p>А&nbsp;также явные признаки победы институционализации представляют собой не&nbsp;что иное, как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть ассоциативно распределены по&nbsp;отраслям.</p>
             </article>
-            <article  class="w"><img src="assets/icons/coffee.png" alt="иконка кофе">
+            <article  ><img src="assets/icons/coffee.png" alt="иконка кофе" class="icon">
               <h4>Нет звука приятнее, чем детский заливистый смех</h4>
                 <p>Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также явные признаки победы институционализации лишь добавляют фракционных разногласий и&nbsp;объединены в&nbsp;целые кластеры себе подобных.</p>
             </article>
-            <article  class="w"><img src="assets/icons/quallity.png" alt="знак качества кофе">
+            <article  ><img src="assets/icons/quallity.png" alt="знак качества кофе" class="icon">
                 <h4>Никто не вправе осуждать гитарный перебор!</h4>
                 <p>Принимая во&nbsp;внимание показатели успешности, высокотехнологичная концепция общественного уклада предопределяет высокую востребованность анализа существующих паттернов поведения.</p>
             </article>
-            <article class="w"><img src="assets/icons/coffeemachine.png" alt="иконка кофе машины">
+            <article ><img src="assets/icons/coffeemachine.png" alt="иконка кофе машины" class="icon">
                <h4>Нашу победу сопровождал глас грядущего поколения</h4> 
                <p>Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что постоянное информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для благоприятных перспектив.</p>
             </article>  
@@ -73,8 +96,9 @@
                     </div>
                 </article>
                 <article class="content-card">
+                      <div class="card-in">
                     <img src="assets/imgs/moon.png" alt="продукция одного из видов чая"></aside>
-                <div class="card-in">
+              
                     <h5>10.000</h5>
                     <h4>РЕВО доброе утро</h4>
                     <p>кофе с ананасом и манго</p>
@@ -83,8 +107,9 @@
                 </div>
                 </article>
                 <article class="content-card">
+                     <div class="card-in">
                    <img src="assets/imgs/leaf.png" alt="продукция одного из видов чая"></aside>
-                <div class="card-in">
+               
                     <h5>10.000</h5>
                     <h4>РЕВО доброе утро</h4>
                     <p>кофе с ананасом и манго</p>
@@ -93,8 +118,9 @@
                 </div>
                 </article>
                 <article class="content-card">
+                     <div class="card-in">    
                     <img src="assets/imgs/chocolate.png" alt="продукция одного из видов чая"></aside>
-                <div class="card-in">    
+               
                 <h5>10.000</h5>
                     <h4>РЕВО доброе утро</h4>
                     <p>кофе с ананасом и манго</p>
@@ -138,7 +164,7 @@
             <h3>Дурное дело нехитрое: постоянный количественный рост стал нашим флагом в борьбе с&nbsp; ложью</h3>
             <h2>Давайте разбираться: герцог графства коронован</h2>
             <div class="flex ">
-               <article class="container">
+               <article class="container ">
                 <aside><img src="assets/imgs/night.png" alt="продукция одного из видов чая"></aside>
                 <div class="flex just"><h5>30.000</h5><p><s>35.000</s></p></div>
                 <h4>РЕВО ночной дозор</h4>
@@ -156,7 +182,7 @@
                 <h4>новинка</h4></div>
             </article>
 
-            <article class="container wraps">
+            <article class="container flex disp wraps">
                 <aside><img src="assets/imgs/black.png" alt="продукция одного из видов чая"></aside>
                 <div class="flex just"><h5>30.000</h5><p><s>35.000</s></p></div>
                 <h4>РЕВО ночной дозор</h4>
@@ -170,10 +196,15 @@
         </section>
         
     </main>
-    <footer><p>Однозначно, сделанные на&nbsp;базе интернет-аналитики
+    <footer><div>Однозначно, сделанные на&nbsp;базе интернет-аналитики
          выводы и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть в&nbsp;равной степени предоставлены сами себе.
          Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также действия представителей оппозиции неоднозначны и&nbsp;будут описаны максимально
           подробно. Ясность нашей позиции очевидна: высококачественный прототип будущего проекта требует анализа новых принципов формирования
-           материально-технической и&nbsp;кадровой базы.</p></footer>
-</body>
+           материально-технической и&nbsp;кадровой базы.</div></footer>
+            <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+                ↑
+            </button>
+            <script src="./assets/script/menu.js"></script>
+           
+        </body>
 </html>
